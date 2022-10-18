@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "core/version"
+require_relative 'core/version'
 
 module Centralize
   module Core
