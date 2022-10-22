@@ -9,3 +9,13 @@ require:
 AllCops:
   NewCops: enable
   TargetRubyVersion: 2.7
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+RSpec/MultipleMemoizedHelpers:
+  Max: 7
+RSpec/NamedSubject:
+  Enabled: false
+RSpec/NestedGroups:
+  Max: 5
