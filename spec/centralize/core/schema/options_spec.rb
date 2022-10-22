@@ -1,6 +1,12 @@
 # frozen_string_literal: true
 
 RSpec.describe Centralize::Core::Schema::Options do
+  describe '._comparable_with' do
+    subject { described_class._comparable_with }
+
+    it { is_expected.to contain_exactly(:class, :attributes) }
+  end
+
   describe '.attribute' do
     subject { klass.new(**kwargs) }
 

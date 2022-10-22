@@ -6,6 +6,10 @@ module Centralize
   module Core
     module Schema
       class Options
+        include Concerns::Comparable
+
+        enable_comparable_with :attributes
+
         class << self
           def inherited(subclass)
             super
