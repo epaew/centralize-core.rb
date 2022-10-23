@@ -13,6 +13,11 @@ AllCops:
 Metrics/BlockLength:
   Exclude:
     - 'spec/**/*'
+
+RSpec/ExampleLength:
+  Max: 7
+RSpec/MultipleExpectations:
+  Max: 2
 RSpec/MultipleMemoizedHelpers:
   Max: 7
 RSpec/NamedSubject:
