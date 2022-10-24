@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require_relative 'core/dependencies'
 require_relative 'core/concerns'
 
 require_relative 'core/schema'
