@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'date'
 require 'set'
 
 require 'active_support/inflector'
