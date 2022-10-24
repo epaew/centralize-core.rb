@@ -6,18 +6,7 @@
 # Note that changes in the inspected code, or installation of new
 # versions of RuboCop, may require this file to be generated again.
 
-# Offense count: 10
+# Offense count: 24
 # Configuration parameters: AllowedConstants.
 Style/Documentation:
-  Exclude:
-    - 'spec/**/*'
-    - 'test/**/*'
-    - 'lib/centralize/core.rb'
-    - 'lib/centralize/core/concerns.rb'
-    - 'lib/centralize/core/concerns/attributes.rb'
-    - 'lib/centralize/core/concerns/attributes/class_methods.rb'
-    - 'lib/centralize/core/concerns/attributes/metadata.rb'
-    - 'lib/centralize/core/schema.rb'
-    - 'lib/centralize/core/schema/column.rb'
-    - 'lib/centralize/core/schema/concerns.rb'
-    - 'lib/centralize/core/schema/concerns/comparable.rb'
+  Enabled: false
