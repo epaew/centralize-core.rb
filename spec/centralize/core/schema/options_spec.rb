@@ -127,4 +127,21 @@ RSpec.describe Centralize::Core::Schema::Options do
         .and eq({ a: :a, b: nil, c: :c })
     end
   end
+
+  describe '#to_dsl' do
+    subject { klass.new.to_dsl }
+
+    let(:klass) do
+      Class.new(described_class) do
+        attribute :nil, required: false
+        attribute :boolean, default: true
+        attribute :integer, default: 0
+        attribute :float, default: 0.0
+        attribute :string, default: 'string'
+        attribute :symbol, default: :symbol
+      end
+    end
+
+    it { is_expected.to eq 'boolean: true, integer: 0, float: 0.0, string: "string", symbol: :symbol' }
+  end
 end
